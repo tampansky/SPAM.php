@@ -1,5 +1,5 @@
 <?php
-// Limit 2x Telpon Setiap Satu Nomor
+// Limit 3x Telpon Setiap Satu Nomor
 function send($phone){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://www.tokocash.com/oauth/otp");                      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -11,9 +11,11 @@ function send($phone){
         curl_close($ch);
                 echo $asw."\n";
 }
+{
 echo "\33[31;1m            *-0-0-\33[36;1m***\33[32;1m-0-0-\33[36;1m***\33[31;1m-0-0-*   \n";
-echo "\33[32;1m     |\33[36;1m******\33[32;1m|| **** \33[31;1m|Tampansky|\33[32;1m******||\33[36;1m******\33[32;1m| \n";
+echo "\33[32;1m     |\33[36;1m******\33[32;1m|| **** \33[31;1m|TampanSky|\33[32;1m******||\33[36;1m******\33[32;1m| \n";
 echo "\33[31;1m            *-0-0-\33[36;1m***\33[32;1m-0-0-\33[36;1m***\33[31;1m-0-0-*   \n";
+echo "\n";
 }
 echo "\33[36;1mInput Nomor : ";
 $nomor = trim(fgets(STDIN));
